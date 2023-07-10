@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="https://static.vecteezy.com/system/resources/thumbnails/005/007/580/small/money-cash-wealth-payment-line-icon-illustration-logo-template-suitable-for-many-purposes-free-vector.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinEdge - Revolutionizing Cross-Border Payments</title>
+  <style>
+    /* Add your custom CSS styles here */
+    body {
+      height:100vh;
+      width:100%;
+      background-color:lightgreen;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      background-color: #333;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background-color:#28769b;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
+    /* Home Section */
+    .home {
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .home h1 {
+      font-size: 48px;
+      color: #333;
+    }
+
+    .home p {
+      font-size: 18px;
+      color: #555;
+      margin-top: 20px;
+    }
+
+    /* About Us Section */
+    .about {
+      background-color: #bebebe;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .about h2 {
+      font-size: 36px;
+      color: #333;
+    }
+
+    .about p {
+      font-size: 18px;
+      color: #555;
+      margin-top: 20px;
+    }
+
+    /* Services Section */
+    .services {
+      background-color: #dcdcdc;
+      text-align:center;
+      padding: 100px;
+    }
+
+    .services h2 {
+      font-size: 50px;
+      color: #00ff00;
+      top:center;
+    }
+    .services .service {
+      display: flex;
+      align-items:center;
+      justify-content: space-around;
+    }
+
+    .services .service p {
+      font-size: 24px;
+      color: #ffba00;
+      text-align: left;
+    }
+
+    /* Contact Us Section */
+    .contact {
+      color:yellow;
+      background-color: #fff;
+      text-align: center;
+      padding: 100px 0;
+      background-image:url("https://media.istockphoto.com/id/1311934969/photo/contact-us.jpg?s=612x612&w=0&k=20&c=_vmYyAX0aFi-sHH8eYS-tLLNfs1ZWXnNB8M7_KWwhgg=");
+	backgrounf-repeat:no-repeat;
+	background-attachment:local;
+	background-size:cover;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contact form input,
+    .contact form textarea {
+      width: 300px;
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+
+    .contact form button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    .contact form button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <div class="navbar">
+      <nav>
+	   <div class="nav-links">
+	       <ul>
+        	   <a href="#home">Home</a>
+        	   <a href="#about">About Us</a>
+        	   <a href="#services">Services</a>
+        	   <a href="#contact">Contact Us</a>
+    	       </ul>
+	   </div>
+       </nav>
+  </div>
+
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <h1>Revolutionizing Cross-Border Payments</h1>
+    <p>Welcome to FinEdge, where we enable seamless transactions for individuals and businesses, transcending geographical boundaries.</p>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p id="about">FinEdge is a cutting-edge fintech startup dedicated to revolutionizing cross-border payments.<br>Our vision is to enable seamless transactions for individuals and businesses, transcending geographical boundaries.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service">
+      <ul>
+          <p><img src="https://5.imimg.com/data5/SELLER/Default/2022/4/GU/IK/XS/84969183/domestic-money-remittance-services-500x500.jpg" height="100" width="100"><br>Individual Money Transfers</p>
+          <p><img src="https://static.vecteezy.com/system/resources/previews/021/803/824/non_2x/business-payment-icon-style-vector.jpg" height="100" width="100"><br> Business Payments</p>
+          <p><img src="https://5.imimg.com/data5/YC/FK/MY-2721919/real-time-payment-tracking-500x500.png" width="100" height="100"><br>Real-Time Payment Tracking</p>
+       </ul>
+     </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <script src="https://unpkg.com/vue@2.6.14/dist/vue.min.js"></script>
+
+  <!-- Vue.js Code -->
+  <script>
+    // Vue.js code goes here
+    new Vue({
+      el: '#contact',
+      data: {
+        name: '',
+        email: '',
+        message: ''
+      },
+      methods: {
+        submitForm() {
+          // Perform form submission or desired action
+          console.log('Form submitted');
+        }
+      }
+    });
+  </script>
+
+</body>
+
+</html>
